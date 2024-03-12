@@ -1,0 +1,15 @@
+
+ TEST USER
+ name: test user
+ email: youremail2@example.com
+ password: yourpassword
+ device_name: your-device-name
+ 
+ 
+ php artisan make:controller RegisterController
+ php artisan make:controller LoginController
+ php artisan make:controller UserController
+
+ php artisan make:middleware CheckRole
+ model user: added hasRole
+ kernel: added role to routeMiddleware
